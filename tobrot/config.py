@@ -4,9 +4,9 @@ class Config(object):
     # get a token from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
+    APP_ID = int(os.environ.get("APP_ID" ))
     API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    OWNER_ID = int(os.environ.get("OWNER_ID",-450598980 ))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
     AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
@@ -51,3 +51,5 @@ class Config(object):
     PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
     CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
+    UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload")
+    RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme")
