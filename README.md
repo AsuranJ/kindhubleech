@@ -63,7 +63,11 @@ python3 -m venv venv
 pip install -r requirements.txt
 # <Create config.py appropriately>
 python3 -m tobrot
-```
+
+TG_BOT_TOKEN
+APP_ID
+API_HASH
+AUTH_CHANNEL
 
 ### an example config.py 👇
 ```py
